@@ -5,6 +5,31 @@ body {
     color: #111;
   }
   
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+    .nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        color: #ccc;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 3em;
+    }
   .hero {
     padding: 100px 40px;
   }
@@ -47,6 +72,7 @@ body {
   }
   
   .cta-button:hover {
+   transition: 0.5s;
     background-color: #333;
   }
   
@@ -103,14 +129,17 @@ body {
 
 .services-container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
+  gap: auto;
 }
 
 .service-box {
   background-color: #fff;
   border-radius: 12px;
+  min-width: 300px;
+  max-width: 600px;
   padding: 20px;
   flex: 1;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
