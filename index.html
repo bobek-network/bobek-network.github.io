@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Usług Dronem</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dronpol</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts (optional, if using) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Future CSS files -->
+  <!-- <link rel="stylesheet" href="responsive.css"> -->
 </head>
-// ok wszystko w takim razie pasuje
 <body>
-    <header>
-        <h1>Widok z góry zmienia perspektywę</h1>
-        <nav>
-            <ul>
-                <li><a href="#wycena">Szybka wycena</a></li>
-                <li><a href="#dowiedz-sie-wiecej">Dowiedz się więcej</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="hero">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6UEJQ87gDSc" frameborder="0" allowfullscreen></iframe>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Let your vision take flight.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper pellentesque iaculis. Cras hendrerit feugiat orci, in tincidunt elit bibendum nec.</p>
+        <a href="#szybka-wycena" class="cta-button">szybka wycena</a>
+      </div>
+      <div class="hero-video">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/6UEJQ87gDSc" 
+            title="Drone Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="wycena">
-        <h2>Szybka wycena</h2>
-        <form id="wycena-form">
-            <label><input type="checkbox" name="usluga" value="200" data-nazwa="Fotografie bez obróbki"> Fotografie bez obróbki (200 PLN)</label>
-            <label><input type="checkbox" name="usluga" value="350" data-nazwa="Fotografie z obróbką"> Fotografie z obróbką (350 PLN)</label>
-            <label><input type="checkbox" name="usluga" value="400" data-nazwa="Film – surowy materiał"> Film – surowy materiał (400 PLN)</label>
-            <label><input type="checkbox" name="usluga" value="700" data-nazwa="Film – montaż"> Film – montaż (700 PLN)</label>
-            <label><input type="checkbox" name="usluga" value="900" data-nazwa="Transmisja na żywo"> Transmisja na żywo (900 PLN)</label>
-            
-            <h3>Twoja wycena: <span id="suma">0</span> PLN</h3>
-            
-            <input type="text" name="imie" placeholder="Imię" required>
-            <input type="text" name="nazwisko" placeholder="Nazwisko" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="telefon" placeholder="Numer telefonu" required>
-            
-            <button type="submit">Podsumuj i wyślij zapytanie</button>
-        </form>
-    </section>
+  <!-- LOGO STRIP -->
+  <section class="logo-strip">
+    <div class="logo-container">
+      <div class="logo-box">logo</div>
+      <div class="logo-box"></div>
+      <div class="logo-box"></div>
+      <div class="logo-box"></div>
+      <div class="logo-box"></div>
+    </div>
+  </section>
 
-    <section id="dowiedz-sie-wiecej">
-        <h2>Dowiedz się więcej</h2>
-        <p>Praca operatora drona to nie tylko wciśnięcie przycisku „start”. Wymaga wiedzy technicznej, odpowiednich licencji i doskonałej znajomości przestrzeni powietrznej. Sprzęt, z którego korzystam, to zaawansowane technologie, które zapewniają najwyższą jakość obrazu, ale też generują wysokie koszty eksploatacji. Każde ujęcie to wynik doświadczenia, planowania i wielu godzin pracy – w powietrzu i przy montażu.</p>
-    </section>
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-image"></div>
+        <h3>zdjęcia z drona</h3>
+        <p>adipiscing elit. Etiam ullamcorper pellentesque iaculis. Cras hendrerit feugiat orci, in tincidunt elit bibendum nec.</p>
+      </div>
+      <div class="service-box">
+        <div class="service-image"></div>
+        <h3>film z drona</h3>
+        <p>adipiscing elit. Etiam ullamcorper pellentesque iaculis. Cras hendrerit feugiat orci, in tincidunt elit bibendum nec.</p>
+      </div>
+      <div class="service-box">
+        <div class="service-image"></div>
+        <h3>montaż z drona</h3>
+        <p>adipiscing elit. Etiam ullamcorper pellentesque iaculis. Cras hendrerit feugiat orci, in tincidunt elit bibendum nec.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Email: <a href="mailto:uslugidronem@gmail.com">uslugidronem@gmail.com</a></p>
-        <p>Telefon: [tu wpisz numer]</p>
-    </section>
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio">
+    <h2>wybrane realizacje</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">realizacja 1</div>
+      <div class="portfolio-item">realizacja 1</div>
+      <div class="portfolio-item">realizacja 1</div>
+      <div class="portfolio-item">realizacja 1</div>
+      <div class="portfolio-item">realizacja 1</div>
+      <div class="portfolio-item">realizacja 1</div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
