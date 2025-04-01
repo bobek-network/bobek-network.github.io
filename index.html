@@ -1,4 +1,429 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UsługiDron.com</title>
+  <!-- Meta tags for SEO optimization -->
+  <meta name="description" content="Profesjonalne usługi dronem. Filmy, fotografia, transmisje na żywo w najwyższej jakości.">
+  <meta name="keywords" content="dron, usługi dronem, fotografia z drona, filmowanie dronem, transmisje na żywo, aerial photography">
+  <meta name="author" content="UsługiDron.com">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph meta tags for better social media sharing -->
+  <meta property="og:title" content="UsługiDron.com - Profesjonalne Usługi Dronem">
+  <meta property="og:description" content="Filmy, fotografia i transmisje na żywo z drona w najwyższej jakości.">
+  <meta property="og:image" content="images/drone-social-cover.jpg">
+  <meta property="og:url" content="https://uslugidron.com">
+  
+  <!-- CSS files -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Google Fonts - Using system fonts for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-dokladnie tak to dziala teraz nanioslem zmiany i jest git napisalem to w online
+<!-- Sticky Navbar -->
+<nav class="sticky-nav">
+  <div class="nav-left">
+    <a href="index.html" class="logo">
+      <img src="drone-icon.png" alt="Drone Icon" class="drone-icon">
+    </a>
+  </div>
+  
+  <!-- Hamburger menu button for mobile -->
+  <div class="hamburger-menu">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  
+  <div class="nav-center" id="nav-links">
+    <a href="#o-nas">ZAKRES USŁUG</a>
+    <a href="#portfolio">REALIZACJE</a>
+    <a href="#kontakt">KONTAKT</a>
+    <a href="tel:+48555666777" class="phone-number"><i class="fas fa-phone"></i> +48 555 666 777</a>
+  </div>
+  
+  <div class="nav-right">
+   
+  </div>
+    <!-- Dark mode toggle -->
+    <div class="theme-toggle">
+      <button id="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </div>
 
-nowa linia kodu i zmiana w kodzie
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Kadruj świat<br>z wysokości.</h1>
+      <p>Specjalizujemy się w profesjonalnych filmach i zdjęciach <br>z drona, które przeniosą Twoją wizję na wyższy poziom.</p>
+      <div class="hero-cta">
+        <a href="#kontakt" class="cta-button primary">Skontaktuj się</a>
+        <a href="#portfolio" class="cta-button secondary">Zobacz nasze prace</a>
+      </div>
+    </div> 
+    <div class="hero-video">
+      <div class="video-wrapper">
+        <!-- Beautiful drone footage example -->
+        <iframe 
+          src="https://www.youtube.com/embed/6UEJQ87gDSc" 
+          title="Drone Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="o-nas">
+  <div class="section-header">
+    <h2>Nasze usługi</h2>
+    <p>Oferujemy kompleksowe usługi wykorzystujące najnowsze technologie dronowe</p>
+  </div>
+  
+  <div class="services-container">
+    <div class="service-box">
+      <div class="service-image" style="background-image: url('images/portfolio/skytower.jpg');">
+        <div class="service-overlay"></div>
+      </div>
+      <h3>Filmy z drona</h3>
+      <p>Nagrania w 4K i 5,4K, ProRes, MOV. Tworzenie filmów poklatkowych hyperlapse oraz timelapse z zachowaniem najwyższej jakości.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Ujęcia z wysokości do 120 m</li>
+        <li><i class="fas fa-check"></i> Stabilizacja obrazu</li>
+        <li><i class="fas fa-check"></i> Filmowanie 25/50/100 FPS</li>
+      </ul>
+    </div>
+    
+    <div class="service-box">
+      <div class="service-image" style="background-image: url('images//portfolio/krynica.jpg');">
+        <div class="service-overlay"></div>
+      </div>
+      <h3>Fotografia z drona</h3>
+      <p>Pakiety fotografii gotowych do publikacji lub surowych w formacie RAW umożliwiającym późniejszą profesjonalną obróbkę.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Panoramy 360°</li>
+        <li><i class="fas fa-check"></i> Sesje o wschodzie/zachodzie</li>
+        <li><i class="fas fa-check"></i> Zdjęcia w formacie RAW</li>
+      </ul>
+    </div>
+    
+    <div class="service-box">
+      <div class="service-image" style="background-image: url('images/portfolio/box.jpeg');">
+        <div class="service-overlay"></div>
+      </div>
+      <h3>Transmisje live</h3>
+      <p>Możliwość wysłania sygnału HD z drona w czasie rzeczywistym do Twojego wydarzenia, na platformy social media lub własną stronę.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Streaming w wysokiej jakości</li>
+        <li><i class="fas fa-check"></i> Integracja z platformami</li>
+        <li><i class="fas fa-check"></i> Obsługa wydarzeń na żywo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS SECTION -->
+<section class="logo-strip">
+  <div class="section-header">
+    <h2>Zaufali nam</h2>
+  </div>
+  <div class="logo-container">
+    <div class="logo-box"><img src="images/bnp.png" alt="BNP Paribas"></div>
+    <div class="logo-box"><img src="images/sniezka.svg" alt="Grupa Śnieżka"></div>
+    <div class="logo-box"><img src="images/canal.svg" alt="Canal+"></div>
+    <div class="logo-box"><img src="images/tvp.svg" alt="TVP"></div>
+    <div class="logo-box"><img src="images/gddkia.png" alt="GDDKiA"></div>
+  </div>
+</section>
+
+<section class="gear">
+  <div class="section-header">
+    <h2>Sprzęt</h2>
+    <p>Wszystkie nasze usługi wykonujemy przy użyciu profesjonalnego sprzętu.</p>
+  </div>
+
+  <div class="gear-grid">
+    <div class="gear-item">
+      <div class="gear-image" style="background-image: url('images/mini2.png'); background-size: 50%;"" ></div>
+      <div class="gear-info">
+        <h3>DJI Mini 2</h3>
+        <p>Dron do produkcji z mikro budżetem.</p>
+      </div>
+    </div>
+
+    <div class="gear-item">
+      <div class="gear-image" style="background-image: url('images/air2s.png');"></div>
+      <div class="gear-info">
+        <h3>DJI Air 2S</h3>
+        <p>Uniwersalny dron o bardzo dobrych parametrach. Idealny do większości projektów.</p>
+      </div>
+    </div>
+
+    <div class="gear-item">
+      <div class="gear-image" style="background-image: url('images/3procine.png'); background-size: 80%;"></div>
+      <div class="gear-info">
+        <h3>DJI Mavic 3 Pro Cine</h3>
+        <p>Najwyższej klasy dron wykorzystywany w zaawansowanych projektach, gdzie jakość obrazu ma najwyższy priorytet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PORTFOLIO SECTION WITH FILTER -->
+<section class="portfolio" id="portfolio">
+  <div class="section-header">
+    <h2>Nasze realizacje</h2>
+    <p>Zobacz wybrane projekty, które zrealizowaliśmy dla naszych klientów</p>
+  </div>
+  
+  <div class="portfolio-filter">
+    <button class="filter-btn active" data-filter="all">Wszystkie</button>
+    <button class="filter-btn" data-filter="video">Filmy</button>
+    <button class="filter-btn" data-filter="photo">Zdjęcia</button>
+    <button class="filter-btn" data-filter="event">Wydarzenia</button>
+  </div>
+  
+ 
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item" data-category="video">
+      <div class="portfolio-video-wrapper">
+        <video class="portfolio-video" muted loop preload="metadata" poster="images/portfolio/skyscraper.jpg">
+          <source src="images/portfolio/skyscraper.mp4" type="video/mp4">
+          Your browser doesn't support HTML5 video.
+        </video>
+        <div class="portfolio-overlay">
+          <h3>Wrocław</h3>
+          <p>Ujęcia w miastach wiernie oddają rolę establisherów wydarzenia.</p>
+          <a href="images/portfolio/skyscraper.mp4" class="portfolio-link" target="_blank"><i class="fas fa-play-circle"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="photo">
+      <div class="portfolio-image" style="background-image: url('images/portfolio/dom1.jpg');"></div>
+      <div class="portfolio-overlay">
+        <h3>Fotografia nieruchomości</h3>
+        <p>Zlecenie w malowniczej Szwajcarii</p>
+        <a href="#" class="portfolio-link"><i class="fas fa-image"></i></a>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="photo">
+      <div class="portfolio-image" style="background-image: url('images/portfolio/industrial1.jpeg');"></div>
+      <div class="portfolio-overlay">
+        <h3>Sesja industrialna</h3>
+        <p>Tereny industrialne mają swój unikalny charakter</p>
+        <a href="#" class="portfolio-link"><i class="fas fa-play-circle"></i></a>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="video">
+      <div class="portfolio-video-wrapper">
+        <video class="portfolio-video" muted loop preload="metadata" poster="images/portfolio/jezioro.jpg">
+          <source src="images/portfolio/jezioro.mp4" type="video/mp4">
+          Your browser doesn't support HTML5 video.
+        </video>
+        <div class="portfolio-overlay">
+          <h3>Hyperlapse</h3>
+          <p>Połączenie zachodu słońca z fotografią poklatkową i ruchem. Połączenie idealne dla zmieniającego się krajobrazu.</p>
+          <a href="images/portfolio/jezioro.mp4" class="portfolio-link" target="_blank"><i class="fas fa-play-circle"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="video">
+      <div class="portfolio-video-wrapper">
+        <video class="portfolio-video" muted loop preload="metadata" poster="images/portfolio/hala.jpg">
+          <source src="images/portfolio/hala.mp4" type="video/mp4">
+          Your browser doesn't support HTML5 video.
+        </video>
+        <div class="portfolio-overlay">
+          <h3>Wrocław</h3>
+          <p>Ujęcia w miastach wiernie oddają rolę establisherów wydarzenia.</p>
+          <a href="images/portfolio/hala.mp4" class="portfolio-link" target="_blank"><i class="fas fa-play-circle"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="event">
+      <div class="portfolio-video-wrapper">
+        <video class="portfolio-video" muted loop preload="metadata" poster="images/portfolio/sylw.jpg">
+          <source src="images/portfolio/sylw.mp4" type="video/mp4">
+          Your browser doesn't support HTML5 video.
+        </video>
+        <div class="portfolio-overlay">
+          <h3>Sylwester w Toruniu</h3>
+          <p>Ujęcia z drona do filmu making-off.</p>
+          <a href="images/portfolio/sylw.mp4" class="portfolio-link" target="_blank"><i class="fas fa-play-circle"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item" data-category="event">
+      <div class="portfolio-image" style="background-image: url('images/portfolio/dron2.jpg');"></div>
+      <div class="portfolio-overlay">
+        <h3>Szwajcaria</h3>
+        <p>Piękne widoki natury</p>
+        <a href="#" class="portfolio-link"><i class="fas fa-play-circle"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="portfolio-cta">
+    <button id="load-more-btn" class="cta-button secondary">Zobacz więcej projektów</button>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials">
+  <div class="section-header">
+    <h2>Co mówią klienci</h2>
+  </div>
+  
+  <div class="testimonials-container">
+    <div class="testimonial">
+      <div class="testimonial-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>Realizacja przeszła nasze oczekiwania. Profesjonalizm, terminowość i elastyczne podejście to największe atuty tej firmy.</p>
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <div class="testimonial-author">
+        <div>
+          <h4>Małgorzata</h4>
+          <p>Właścicielka firmy eventowej w Katowicach</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial">
+      <div class="testimonial-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>Jakość ujęć z drona była spektakularna. <br> Film promocyjny przyciągnął wielu nowych klientów do naszego resortu.</p>
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <div class="testimonial-author">
+        
+        <div>
+          <h4>Michał</h4>
+          <p>Właściciel resortu w Kudowie-Zdroju</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="kontakt" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Kontakt</h2>
+      <p>Skontaktuj się z nami – odpowiemy tak szybko, jak to możliwe.</p>
+    </div>
+    <div class="contact-highlight">
+      <ul>
+        <li>+48 555 666 777</li>
+        <li>kontakt@uslugidron.com</li>
+        <li>ul. Staromiejska 6/10 D 40-013 Katowice</li>
+      </ul>
+      
+    </div>
+    
+</section>
+
+
+<!-- MAP SECTION -->
+<section class="map-section">
+  <div class="map-container">
+    <!-- Replace with actual Google Maps embed code -->
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.7590342673025!2d19.020478976230326!3d50.25919147152864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce40fc28c99b%3A0x82a7034a67d6d7b7!2sStaromiejska%206%2F10D%2C%2040-013%20Katowice!5e0!3m2!1spl!2spl!4v1711886761947!5m2!1spl!2spl" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <div class="footer-logo">
+        <img src="drone-icon.png" alt="Drone Logo">
+        <h3>UsługiDron.com</h3>
+      </div>
+      <p>Profesjonalne usługi dronem dla biznesu i klientów indywidualnych. Działamy na terenie całej Polski.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Szybki kontakt</h4>
+      <ul class="footer-contact">
+        <li><i class="fas fa-phone"></i> <a href="tel:+48555666777"> +48 555 666 777</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:kontakt@uslugidron.com">kontakt@uslugidron.com</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> ul. Staromiejska 6/10D, Katowice</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Nawigacja</h4>
+      <ul class="footer-links">
+        <li><a href="#top">Strona główna</a></li>
+        <li><a href="#o-nas">Usługi</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="privacy.html">Polityka prywatności</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+
+      <a 
+        href="mailto:kontakt@uslugidron.com?subject=Wycena%20projektu&body=Data%3A%0ALokalizacja%3A%0AGodziny%20pracy%3A%0AZakres%20usługi%3A%0AKrótki%20opis%3A%0ATelefon%20do%20kontaktu%3A" 
+        class="cta-button primary" 
+        style="display: inline-block; margin-top: 1rem;">
+        Szybka wycena
+      </a>
+    </div>
+    
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 UsługiDron.com. Wszelkie prawa zastrzeżone.</p>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Przewiń do góry">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- JavaScript for interactions -->
+<script src="script.js"></script>
+
+</body>
+</html>
